@@ -1,0 +1,141 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.round {
+    border-radius: 50px;
+}
+
+.sidebar, .main {
+    transition: all 500ms;
+    position: relative;
+}
+
+.nav-ul {
+    background: transparent !important;
+}
+
+.nav-ul li {
+    
+}
+
+.nav-ul a {
+    text-decoration: none;
+    display: inline-flex;
+    vertical-align: middle;
+}
+
+.nav-search .v-input__slot:before {
+    border: none !important;
+}
+
+.top-nav {
+    box-shadow: 0 2px 4px -1px rgba(0,0,0,.2), 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12);
+    background: #fff;
+    min-height: 64px;
+}
+
+.top-nav-link.v-btn, .stroke {
+    text-transform: capitalize
+}
+
+.top-nav-link.v-btn:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 0px;
+    opacity: .12;
+    width: 0px;
+}
+
+.order-sum-head {
+    font-size: 30px;
+    font-weight: 500
+}
+
+.order-sum {
+    display: inline-flex;
+    vertical-align: middle;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.order-sum i {
+    font-size: 17px !important;
+}
+
+.order-table {
+    border-collapse: collapse
+}
+
+.order-table tr th {
+    color: #757575;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+.order-table tr th:first-child {
+    border-radius: 3px 0px 0px 3px;
+}
+
+.order-table tr th:last-child {
+    border-radius: 0px 3px 3px 0px;
+}
+
+.order-table tr th, .order-table tr td  {
+    padding: 13px;
+}
+
+.order-table tr td {
+    border-bottom: 1px solid rgba(0,0,0,.12);
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.order-table tr td:last-child {
+    font-size: 11px;
+}
+
+.bell {
+    color: grey;
+    position: relative;
+}
+
+.bell:before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    z-index: 99;
+    background: orange;
+    right: 1px;
+    top: -2px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.chat-icon {
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+    color: #fff;
+}
+
+.chat-icon span {
+    font-size: 60px;
+}
+
+@media screen and (max-width: 1124px) {
+    .sidebar.shrink {
+        max-width: 0px !important;
+        overflow: hidden;
+        padding: 0px;
+        margin-left: -20px;
+    }
+    
+    .main.expand {
+        width: 100% !important;
+        min-width: 100% !important;
+    }
+}
